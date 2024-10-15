@@ -1,0 +1,9 @@
+- Nella configurazione dei demoni frr, ci si può accorgere che:
+se vengono incluse tutte le 'cloud' disegnate, i distance vector di
+rip verrebbero inviati anche a dispositivi come pc, local, net e root 
+che, all'effettivo, non ci fanno nulla... quindi si sceglie di 
+dichiarare le network intermedie
+
+- Non è necessario ridistribuire anche le rotte statiche, questo poiché per come è strutturata la rete i percorsi ottimi sono esattamente quelli che verrebbero tecnicamente impostati staticamente, quindi il calcolo di RIP non ha differenza in questo caso
+
+- Si potrebbe pensare ad una distribuzione delle rotte statiche nei distance vector solo nel caso in cui si contemplino situazioni di scollegamento di eventuali LAN: altrimenti il percorso non viene ricalcolato, per questo le inseriamo

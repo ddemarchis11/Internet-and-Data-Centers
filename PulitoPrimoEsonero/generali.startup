@@ -1,0 +1,5 @@
+ip route add X.X.X.X/X dev ethi
+ip route add X.X.X.X/X via Y.Y.Y.Y dev ethi
+ip route add default via X.X.X.X dev eth0
+ip route add X.X.X.X/X via Y.Y.Y.Y dev eth1
+
