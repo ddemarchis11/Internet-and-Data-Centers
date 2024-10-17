@@ -1,0 +1,13 @@
+$TTL    60000
+@               IN      SOA     nseducation.education.com.    root.nseducation.education.com. (
+						2006031201 ; serial
+						28 ; refresh
+						14 ; retry
+						3600000 ; expire
+						0 ; negative cache ttl
+						)
+
+@								IN	NS	nseducation.education.com.
+nseducation.education.com.		IN	A	7.0.0.3
+
+web.education.com.				IN	A	9.0.0.2
